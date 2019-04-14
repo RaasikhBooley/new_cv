@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- scss/css link -->
+    <link rel="stylesheet"  href="css/main.css" />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- google fonts -->
+    <!-- nav font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+    <!-- content font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> 
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+        
+            <div class="toggle-btn" onclick="sidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1 class="logo">
+                Raasikh Booley
+            </h1>
+            
+            <div id="navbar">
+                <li id="spacing"><a href=""><i class="fas fa-home"></i> Home</a></li>
+                <li><a href=""><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href=""><i class="fas fa-toolbox"></i> Skills</a></li>
+                <li><a href=""><i class="fas fa-phone"></i> Contact</a></li>
+            </div>
+            
+            <div class="btn">
+                <li id="download-desktop"><a href=""><i class="fas fa-file-download"></i> Download CV</a></li>
+                <li id="download-responsive"><a href=""><i class="fas fa-file-download"></i></a></li>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="picture">
+                <img src="img/Raasikh.JPG" alt="">
+            </div>
+            <div class="title">
+                <h2>Junior Web Developer</h2>
+            </div>
+            <div class="information">
+                <h3>Who Am I</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ratione numquam esse officiis saepe voluptatem nam, dolorem quo illo maiores sit quam ducimus beatae architecto accusantium unde ab voluptas sint?</p>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolor beatae dignissimos, impedit nobis similique harum quia quaerat delectus quis recusandae ratione ipsam placeat ex tenetur et perferendis modi animi!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="socials">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript for burger nav -->
+    <script>
+        function sidebar(){
+            document.getElementById("navbar").classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

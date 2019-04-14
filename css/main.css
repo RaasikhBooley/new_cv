@@ -1,0 +1,327 @@
+body {
+  background-color: grey;
+}
+
+li {
+  display: inline-block;
+  width: auto;
+  padding: 0 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playfair Display SC", serif;
+  color: #c8c8c8;
+}
+
+i {
+  display: inline-block;
+  width: auto;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  color: #c8c8c8;
+  z-index: 4;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin: 0em 0.6em;
+  font-size: 4em;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3em;
+  padding: 0.3em;
+  text-decoration: underline #234a5c;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5em;
+  padding: 0.3em;
+  width: 95%;
+}
+
+img {
+  width: 20em;
+  height: 20em;
+  border: 0.5em solid #32324b;
+  margin: 1.2em 2.3em;
+}
+
+* {
+  margin: 0;
+  width: 100%;
+}
+
+.card {
+  padding-top: 6em;
+}
+
+.header {
+  margin: 0 auto;
+  width: 70%;
+  height: 10vh;
+  background-color: #234a5c;
+}
+
+.toggle-btn {
+  display: none;
+}
+.toggle-btn span {
+  display: none;
+}
+
+.content {
+  margin: 0 auto;
+  width: 70%;
+  height: 55vh;
+  background-color: whitesmoke;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 70%;
+  height: 5vh;
+  background-color: #234a5c;
+}
+
+#download-responsive {
+  display: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.8fr;
+  grid-template-areas: "logo navbar btn";
+}
+
+.logo {
+  grid-area: logo;
+  margin: 0.9em 1.2em;
+}
+
+#navbar {
+  grid-area: navbar;
+  margin: 2.5em 7em;
+}
+
+.btn {
+  grid-area: btn;
+  margin: 2.5em 0em;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "pic info" "pic info" "title info";
+}
+
+.picture {
+  grid-area: pic;
+  background-color: #272727;
+}
+
+.information {
+  grid-area: info;
+}
+
+.title {
+  grid-area: title;
+  background-color: #272727;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". socials .";
+}
+
+.socials {
+  grid-area: socials;
+  margin: 0.8em 17em;
+}
+
+@media (max-width: 700px) {
+  * {
+    overflow: hidden;
+  }
+
+  h1 {
+    font-family: "Fredericka the Great", cursive;
+    color: #c8c8c8;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    text-align: center;
+    margin-top: 0.3em;
+    font-size: 2em;
+  }
+
+  h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: underline #234a5c;
+  }
+
+  p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  img {
+    width: 12em;
+    height: 12em;
+    border: 0.5em solid #32324b;
+    margin: 0.8em 5em;
+  }
+
+  #download-desktop {
+    display: none;
+  }
+
+  #download-responsive {
+    display: inline-block;
+    font-size: 1em;
+    margin: 1.5em 0em;
+  }
+
+  .header {
+    margin: 0 auto;
+    width: 100%;
+    height: 10vh;
+    background-color: #234a5c;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+  }
+
+  .footer {
+    margin: 0 auto;
+    width: 100%;
+    height: 5vh;
+    background-color: #234a5c;
+  }
+
+  #navbar {
+    width: 9em;
+    height: 100%;
+    position: fixed;
+    grid-area: navbar;
+    margin: unset;
+    background-color: #234a5c;
+    left: -9em;
+    transition: 0.3s all;
+  }
+
+  #navbar.active {
+    left: 0em;
+  }
+
+  .btn {
+    grid-area: btn;
+    margin: 0em;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    display: block;
+    width: 3em;
+    height: 3em;
+    margin: 1em 0 0 1em;
+    z-index: 3;
+  }
+  .toggle-btn span {
+    display: block;
+    width: 2em;
+    height: 0.3em;
+    margin: 0.3em 0;
+    background-color: #c8c8c8;
+    z-index: 2;
+  }
+
+  #spacing {
+    margin-top: 8em;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.8fr;
+    grid-template-areas: "navbar logo btn";
+  }
+
+  .logo {
+    grid-area: logo;
+    margin: 0.8em 1em;
+  }
+
+  li {
+    display: block;
+    font-size: 0.8em;
+    margin: 2em 0;
+  }
+
+  .card {
+    padding: 0%;
+    width: 100%;
+  }
+
+  .content {
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-areas: "pic pic" "title title" "info info";
+  }
+
+  .picture {
+    grid-area: pic;
+    background-color: #272727;
+    height: 35vh;
+  }
+
+  .information {
+    grid-area: info;
+    height: 40vh;
+  }
+
+  .title {
+    grid-area: title;
+    background-color: #272727;
+    height: 10vh;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "socials";
+  }
+
+  .socials {
+    grid-area: socials;
+    margin: 0.5em 5em;
+  }
+  .socials li {
+    display: inline;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
