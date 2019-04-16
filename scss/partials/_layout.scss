@@ -1,4 +1,6 @@
 // grid layout
+
+// card top header grid 
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr 0.8fr;
@@ -6,21 +8,25 @@
         "logo navbar btn"
 }
 
+// logo section
 .logo {
     grid-area: logo;
     margin: 0.4em 0.8em;
 }
 
+// navbar section
 #navbar {
     grid-area: navbar;
     margin: 1.3em 1.5em;
 }
 
+// download button section
 .btn {
     grid-area: btn;
     margin: 1.3em 1.5em;
 }
 
+// card info/content grid
 .content {
     display: grid;
     grid-template-columns: 1.3fr 3fr;
@@ -31,23 +37,24 @@
         "title info"
 }
 
+// picture section
 .picture {
     grid-area: pic;
     background-color: rgb(39, 39, 39);
-    // background-color: red;
 }
 
+// information section
 .information {
     grid-area: info;
-    // background-color: yellow;
 }
 
+// title section
 .title {
     grid-area: title;
     background-color: rgb(39, 39, 39);
-    // background-color: rgb(97, 107, 117);
 }
 
+// footer grid
 .footer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -56,6 +63,7 @@
         ". socials ."
 }
 
+// socials section
 .socials {
     grid-area: socials;
     margin: 0.3em 0em;

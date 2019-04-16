@@ -1,21 +1,23 @@
+// apply to all
 * {
     margin: 0;
     width: 100%;
 }
 
+// card section
 .card {
     padding-top: 6em;
 }
-.big {
-    font-size: 2em;
-}
 
+// header section
 .header {
     margin: 0 auto;
     width: 70%;
     height: 10vh;
     background-color: rgb(35, 74, 92);
 }
+
+// burger navbar button 
 .toggle-btn {
     display: none;
 
@@ -24,6 +26,7 @@
     }
 }
 
+// content section
 .content {
     margin: 0 auto;
     width: 70%;
@@ -31,6 +34,7 @@
     background-color: whitesmoke;
 }
 
+// footer section
 .footer {
     margin: 0 auto;
     width: 70%;
@@ -38,6 +42,7 @@
     background-color: rgb(35, 74, 92);
 }
 
+// download cv button show
 #download-responsive {
     display: none;
 }

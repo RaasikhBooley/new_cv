@@ -19,59 +19,81 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
 </head>
 <body>
+    <!-- card/container -->
     <div class="card">
-        <div class="header">
-        
-            <div class="toggle-btn" onclick="sidebar()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
 
+        <!-- header section -->
+        <header class="header">
+        
+            <!-- burger nav for resonsive design -->
+            <nav class="toggle-btn" onclick="sidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+            <!-- card logo -->
             <h1 class="logo">
                 Raasikh Booley
             </h1>
             
-            <div id="navbar">
+            <!-- navbar -->
+            <nav id="navbar">
                 <li id="spacing"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
                 <li><a href="skills.html"><i class="fas fa-toolbox"></i> Skills</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-            </div>
+            </nav>
             
+            <!-- cv download button -->
             <div class="btn">
                 <li id="download-desktop"><a href="Raasikh.docx"><i class="fas fa-file-download"></i> Download CV</a></li>
                 <li id="download-responsive"><a href="Raasikh.docx"><i class="fas fa-file-download"></i></a></li>
             </div>
-        </div>
+        </header>
 
-        <div class="content">
-            <div class="picture">
+        <!-- content section/grid -->
+        <section class="content">
+        
+            <!-- picture block -->
+            <picture class="picture">
                 <img src="img/Raasikh.JPG" alt="">
-            </div>
-            <div class="title">
+            </picture>
+
+            <!-- title section -->
+            <section class="title">
                 <h2>Junior Web Developer</h2>
-            </div>
-            <div class="information">
+            </section>
+
+            <!-- information -->
+            <article class="information">
                 <h3>Education</h3>
-                <br>
+                <!-- <br> -->
                 <h4>Darul Islam High School</h4>
                 <p>- Matic Certificate (2010-2014)</p>
+
                 <br>
+
                 <h4>City Varsity</h4>
                 <p>- Animation Diploma (2016-2018)</p>
+                
                 <br>
+                
                 <h4>Life Choices</h4>
                 <p>- Coding Certificate (2018-2019)</p>
-            </div>
-        </div>
-        <div class="footer">
+            </article>
+        </section>
+
+        <!-- footer section -->
+        <footer class="footer">
+        
+            <!-- social links -->
             <div class="socials">
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/raasikh.booley"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/raasikh_booley"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://github.com/RaasikhBooley"><i class="fab fa-github-square"></i></a></li>
             </div>
-        </div>
+        </footer>
     </div>
 
     <!-- javascript for burger nav -->

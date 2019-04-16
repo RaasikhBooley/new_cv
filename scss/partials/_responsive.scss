@@ -1,6 +1,6 @@
 // responsive design
 
-// desktop 
+// responsive design for desktop/laptop 
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -9,7 +9,7 @@
 
 }
 
-// tablet
+// responsive design for tablet
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -18,7 +18,7 @@
 }
 
 
-// phone
+// responsive design for phone
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -38,10 +38,7 @@
 
     h2 {
         font-family: 'Work Sans', sans-serif;
-        // margin: 0;
         text-align: center;
-        // display: inline;
-        // margin-top: 0.3em;
         font-size: 1.5em;
     }
 
@@ -73,7 +70,6 @@
         margin: 1em 4.5em;
         text-align: center;
     }
-
 
     // styles extend
     .card {
@@ -135,6 +131,7 @@
     #spacing {
         margin-top: 8em;
     }
+
     // grids layout
     .header {
         display: grid;
@@ -201,7 +198,6 @@
 
     .footer {
         display: grid;
-        // height: 85vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:  
