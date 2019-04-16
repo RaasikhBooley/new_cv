@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    width: 100%;
+}
+
+.card {
+    padding-top: 6em;
+}
+.big {
+    font-size: 2em;
+}
+
+.header {
+    margin: 0 auto;
+    width: 70%;
+    height: 10vh;
+    background-color: rgb(35, 74, 92);
+}
+.toggle-btn {
+    display: none;
+
+    span {
+        display: none;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    width: 70%;
+    height: 55vh;
+    background-color: whitesmoke;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 70%;
+    height: 5vh;
+    background-color: rgb(35, 74, 92);
+}
+
+#download-responsive {
+    display: none;
+}

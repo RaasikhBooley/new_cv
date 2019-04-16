@@ -1,0 +1,221 @@
+// responsive design
+
+// desktop 
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+}
+
+// tablet
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+
+// phone
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    // apply to all
+    * {
+        overflow: hidden;
+    }
+
+    // base styling
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        color: rgb(200, 200, 200);
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        text-align: center;
+        // display: inline;
+        // margin-top: 0.3em;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1em;
+        padding: 0.5em 0em;
+        text-align: center;
+        text-decoration: underline rgb(35, 74, 92);
+    }
+
+    h4 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 0.8em;
+        text-align: center;
+        width: 95%;
+    }
+
+    p {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    img {
+        width: 10em;
+        height: 10em;
+        border: 0.5em solid rgb(50, 50, 75);
+        margin: 1em 4.5em;
+        text-align: center;
+    }
+
+
+    // styles extend
+    .card {
+        padding: 0%;
+        width: 100%;
+    }
+
+    #download-desktop {
+        display: none;
+    }
+    #download-responsive {
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 0.6em 0em;
+    }
+    .header {
+        margin: 0 auto;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(35, 74, 92);
+    }
+    
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        background-color: whitesmoke;
+    }
+    
+    .footer {
+        margin: 0 auto;
+        width: 100%;
+        height: 5vh;
+        background-color: rgb(35, 74, 92);
+    }
+
+    #navbar.active {
+        left: 0em;
+    }
+
+
+    .toggle-btn {
+        position: absolute;
+        display: block;
+        width: 3em;
+        height: 3em;
+        margin: 0.7em 1em;
+        z-index: 3;
+    
+        span {
+            display: block;
+            width: 1.5em;
+            height: 0.3em;
+            margin: 0.3em 0;
+            background-color: rgb(200, 200, 200);
+            z-index: 2;
+        }
+    }
+    #spacing {
+        margin-top: 8em;
+    }
+    // grids layout
+    .header {
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 0.8fr;
+        grid-template-areas:  
+            "navbar logo btn"
+    }
+    
+    .logo {
+        grid-area: logo;
+        margin: 0.6em 0em;
+    }
+
+    #navbar {
+        width: 9em;
+        height: 100%;
+        position: fixed;
+        grid-area: navbar;
+        margin: unset;
+        background-color: rgb(35, 74, 92); 
+        left: -9em;
+        transition: 0.3s all;
+    }
+
+    li {
+        display: block;
+        font-size: 0.8em;
+        margin: 2em 0em;
+    }
+
+    .btn {
+        grid-area: btn;
+        margin: 0;
+    }
+    
+    
+    .content {
+        display: grid;
+        height: 85vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr;
+        grid-template-areas:  
+            "pic pic"
+            "title title"
+            "info info"
+    }
+    
+    .picture {
+        grid-area: pic;
+        background-color: rgb(39, 39, 39);
+        height: 35vh;
+    }
+    
+    .information {
+        grid-area: info;
+        height: 40vh;
+    }
+    
+    .title {
+        grid-area: title;
+        background-color: rgb(39, 39, 39);
+        height: 10vh;
+    }
+
+    .footer {
+        display: grid;
+        // height: 85vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:  
+            "socials"
+    }
+
+    .socials {
+        grid-area: socials;
+        margin: 0.5em 0em;
+        text-align: center;
+        
+        li {
+            display: inline;
+            margin: 0;
+        }
+    }
+}
