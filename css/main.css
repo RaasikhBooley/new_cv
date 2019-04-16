@@ -162,7 +162,8 @@ img {
   p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.7em;
-    text-align: center; }
+    text-align: center;
+    color: black; }
 
   img {
     width: 10em;
@@ -229,7 +230,7 @@ img {
 
   .logo {
     grid-area: logo;
-    margin: 0.6em 0em; }
+    margin: 0.4em 0em; }
 
   #navbar {
     width: 9em;
@@ -279,7 +280,7 @@ img {
 
   .socials {
     grid-area: socials;
-    margin: 0.5em 0em;
+    margin: 0.3em 0em;
     text-align: center; }
     .socials li {
       display: inline;
