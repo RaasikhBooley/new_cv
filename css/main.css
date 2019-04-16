@@ -169,7 +169,7 @@ img {
     width: 10em;
     height: 10em;
     border: 0.5em solid #32324b;
-    margin: 1em 4.5em;
+    margin: 0.5em 4.5em;
     text-align: center; }
 
   .card {
@@ -182,7 +182,7 @@ img {
   #download-responsive {
     display: inline-block;
     font-size: 1.5em;
-    margin: 0.6em 0em; }
+    margin: 0.5em 0em; }
 
   .header {
     margin: 0 auto;
