@@ -3,7 +3,7 @@
 // card top header grid 
 .header {
     display: grid;
-    grid-template-columns: 1fr 2fr 0.8fr;
+    grid-template-columns: 1fr 2fr 0.7fr;
     grid-template-areas:  
         "logo navbar btn"
 }
@@ -11,7 +11,7 @@
 // logo section
 .logo {
     grid-area: logo;
-    margin: 0.4em 0.8em;
+    margin: 0.4em 1em;
 }
 
 // navbar section
@@ -23,7 +23,7 @@
 // download button section
 .btn {
     grid-area: btn;
-    margin: 1.3em 1.5em;
+    margin: 1.3em 1.7em;
 }
 
 // card info/content grid
@@ -52,6 +52,46 @@
 .title {
     grid-area: title;
     background-color: rgb(39, 39, 39);
+}
+
+.skills-box {
+    display: grid;
+    // margin: 1em;
+    // grid-gap: 0.5em;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:  
+        "box-1 box-2"
+        "box-3 box-4"
+}
+
+.box-1 {
+    grid-area: box-1;
+    width: 5em;
+    height: 8em;
+    text-align: center;
+}
+
+.box-2 {
+    grid-area: box-2;
+    width: 5em;
+    height: 8em;
+    text-align: center;
+}
+
+.box-3 {
+    grid-area: box-3;
+    width: 5em;
+    height: 8em;
+    text-align: center;
+}
+
+.box-4 {
+    grid-area: box-4;
+    width: 5em;
+    height: 8em;
+    text-align: center;
 }
 
 // footer grid

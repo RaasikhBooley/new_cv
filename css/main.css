@@ -4,7 +4,7 @@ body {
 li {
   display: inline-block;
   width: auto;
-  padding: 0em 1em; }
+  padding: 0em 0.3em; }
 
 a {
   text-decoration: none;
@@ -51,7 +51,7 @@ img {
   width: 12em;
   height: 12em;
   border: 0.5em solid #32324b;
-  margin: 1.2em 2.3em; }
+  margin: 1.2em 2.4em; }
 
 * {
   margin: 0;
@@ -86,14 +86,20 @@ img {
 #download-responsive {
   display: none; }
 
+.icon-size {
+  font-size: 4em; }
+
+.project-blue {
+  color: #234a5c; }
+
 .header {
   display: grid;
-  grid-template-columns: 1fr 2fr 0.8fr;
+  grid-template-columns: 1fr 2fr 0.7fr;
   grid-template-areas: "logo navbar btn"; }
 
 .logo {
   grid-area: logo;
-  margin: 0.4em 0.8em; }
+  margin: 0.4em 1em; }
 
 #navbar {
   grid-area: navbar;
@@ -101,7 +107,7 @@ img {
 
 .btn {
   grid-area: btn;
-  margin: 1.3em 1.5em; }
+  margin: 1.3em 1.7em; }
 
 .content {
   display: grid;
@@ -119,6 +125,37 @@ img {
 .title {
   grid-area: title;
   background-color: #272727; }
+
+.skills-box {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "box-1 box-2" "box-3 box-4"; }
+
+.box-1 {
+  grid-area: box-1;
+  width: 5em;
+  height: 8em;
+  text-align: center; }
+
+.box-2 {
+  grid-area: box-2;
+  width: 5em;
+  height: 8em;
+  text-align: center; }
+
+.box-3 {
+  grid-area: box-3;
+  width: 5em;
+  height: 8em;
+  text-align: center; }
+
+.box-4 {
+  grid-area: box-4;
+  width: 5em;
+  height: 8em;
+  text-align: center; }
 
 .footer {
   display: grid;
@@ -182,7 +219,7 @@ img {
   #download-responsive {
     display: inline-block;
     font-size: 1.5em;
-    margin: 0.5em 0em; }
+    margin: 0.6em 0.7em; }
 
   .header {
     margin: 0 auto;
@@ -210,7 +247,7 @@ img {
     display: block;
     width: 3em;
     height: 3em;
-    margin: 0.7em 1em;
+    margin: 0.7em 0.9em;
     z-index: 3; }
     .toggle-btn span {
       display: block;
@@ -221,7 +258,7 @@ img {
       z-index: 2; }
 
   #spacing {
-    margin-top: 8em; }
+    margin-top: 6em; }
 
   .header {
     display: grid;
@@ -230,7 +267,8 @@ img {
 
   .logo {
     grid-area: logo;
-    margin: 0.4em 0em; }
+    margin: 0.5em 0em;
+    z-index: 4; }
 
   #navbar {
     width: 9em;
@@ -245,7 +283,7 @@ img {
   li {
     display: block;
     font-size: 0.8em;
-    margin: 2em 0em; }
+    margin: 2em 1em; }
 
   .btn {
     grid-area: btn;
@@ -284,6 +322,37 @@ img {
     text-align: center; }
     .socials li {
       display: inline;
-      margin: 0; } }
+      margin: 0; }
+
+  .skills-box {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "box-1 box-2" "box-3 box-4"; }
+
+  .box-1 {
+    grid-area: box-1;
+    width: 9.5em;
+    height: 6em;
+    text-align: center; }
+
+  .box-2 {
+    grid-area: box-2;
+    width: 9.5em;
+    height: 6em;
+    text-align: center; }
+
+  .box-3 {
+    grid-area: box-3;
+    width: 9.5em;
+    height: 6em;
+    text-align: center; }
+
+  .box-4 {
+    grid-area: box-4;
+    width: 9.5em;
+    height: 6em;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
